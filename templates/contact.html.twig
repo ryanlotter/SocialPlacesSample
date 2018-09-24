@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact Page{% endblock %}
+
+  {% block body %}
+
+    {{ form_start(form, {attr: {class: 'standardForm'} }) }}
+      {{ form_row(form.Name) }}
+      {{ form_row(form.Surname) }}
+      {{ form_row(form.EmailAdress) }}
+      {{ form_row(form.PhoneNumber) }}
+      <div class="g-recaptcha" data-sitekey="6LdLynEUAAAAAFWFT2ZMtOiK5bl7osUDQYOJFvvY"></div>
+      {{ form_end(form) }}
+    <br />
+    <a href="{{ path('home') }} ">Home</a>
+  {% endblock %}

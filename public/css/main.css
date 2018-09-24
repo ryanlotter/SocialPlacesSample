@@ -1,0 +1,41 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+#content {
+  border-radius: 25px;
+  padding:30px;
+  background-color: #99CCFF;
+  width:300px;
+}
+
+#center {
+  display: table;
+  margin: 0 auto;
+}
+.standardForm {
+
+}
+
+.standardForm div {
+  margin-bottom: 3px;
+
+}
+.standardForm div > label {
+  width: 120px;
+  display:inline-block;
+}
+
+.standardFormButton {
+  font-size: 12pt;
+  border-radius: 13px;
+  background-color: #FFFFFF;
+  border: none;
+
+}
