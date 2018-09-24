@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Contact Page{% endblock %}
+  {% block header %}Add Contact{% endblock %}
 
   {% block body %}
 
@@ -11,6 +12,5 @@
       {{ form_row(form.PhoneNumber) }}
       <div class="g-recaptcha" data-sitekey="6LdLynEUAAAAAFWFT2ZMtOiK5bl7osUDQYOJFvvY"></div>
       {{ form_end(form) }}
-    <br />
-    <a href="{{ path('home') }} ">Home</a>
   {% endblock %}
+      {% block footer %}<a href="{{ path('home') }} ">Home</a>{% endblock %}

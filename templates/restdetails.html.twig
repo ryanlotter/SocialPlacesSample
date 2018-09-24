@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Landing Page{% endblock %}
+    {% block header %}How to use the API calls{% endblock %}
+
+  {% block body %}
+    <div>Due to time constraints, instead of using 3rd party REST options, I relied on consuming a JSON request via the PUT command. Running locally, it can be executed via a REST client calling http://127.0.0.1:8000/api_addContact passing through a JSON request body in the following format:</div><br />{"Name":"RyanJSON",<br />"Surname":"LotterJSON",<br />"EmailAddress":"ryanlotter@gmail.com",<br />"PhoneNumber":"0845154065"}
+  {% endblock %}
+      {% block footer%}<a href="{{ path('home') }} ">Home</a>{% endblock %}

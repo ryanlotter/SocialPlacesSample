@@ -1,6 +1,20 @@
+@font-face {
+   font-family: sansation_light;
+   src: url(../fonts/sansation_light.woff);
+}
+
 html {
   font-family: Arial, sans-serif;
   font-size: 11pt;
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(165,214,243,1) 54%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(17%, rgba(255,255,255,1)), color-stop(54%, rgba(165,214,243,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(165,214,243,1) 54%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(165,214,243,1) 54%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(165,214,243,1) 54%, rgba(255,255,255,1) 100%);
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(165,214,243,1) 54%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  height:100%;
 }
 
 a {
@@ -12,13 +26,35 @@ a {
   border-radius: 25px;
   padding:30px;
   background-color: #99CCFF;
-  width:300px;
+  max-width: 350px;
+
 }
 
-#center {
-  display: table;
-  margin: 0 auto;
+.header {
+  font-family: sansation_light;
+  color: #99CCFF;
+  text-align: center;
 }
+
+.footer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer a {
+  font-family: sansation_light;
+  color: #000000;
+  text-decoration: none;
+}
+.page {
+  margin-top: 150px;
+  width: 355px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .standardForm {
 
 }

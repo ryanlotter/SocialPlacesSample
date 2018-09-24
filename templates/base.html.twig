@@ -11,12 +11,15 @@
               {{ message }}
           </div>
       {% endfor %}
-
+      <div class='page'>
+        <h1 class='header'>{% block header %}{% endblock %}</h1>
         <div id="content">
           <div id="center">
               {% block body %}{% endblock %}
           </div>
         </div>
+        <div class='footer'>{% block footer %}{% endblock %}</div>
+      </div>
       {% block javascripts %}<script src="{{ asset('js/main.js') }}"></script>
       <script src='https://www.google.com/recaptcha/api.js'></script>
       {% endblock %}

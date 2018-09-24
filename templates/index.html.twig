@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Landing Page{% endblock %}
+  {% block header %}Available Links{% endblock %}
 
   {% block body %}
-    <h1>Available Links</h1>
     <ul>
     <li><a href="{{ path('contact') }} ">Contact</a></li>
-    <li><a href='webservicedetails.html'>Webservice</a></li>
+    <li><a href='{{ path('rest') }}'>REST Details</a></li>
     </ul>
   {% endblock %}
